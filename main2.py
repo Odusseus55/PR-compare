@@ -158,7 +158,6 @@ def final_report():
             df_BOM.to_csv(r'/Users/odusseus/Desktop/PR compare/2.0/BOM.csv')
             BOM_out = df_BOM.to_html()
         else:
-            #BOM_out = 'No BOM file selected'
             flash('No BOM file selected')
             return redirect(url_for('index'))
 
