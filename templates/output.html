@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block output %}
+<div class="container mt-5 ">
+    <p class="fw-light font-monospace text-muted">OUTPUT</p>
+    <div class="container d-flex justify-content-evenly">
+      <div>
+          <p class="fw-bold">Part numbers with specific PR conditions just in Drawing: </p>
+          {{text1|safe}}
+      </div>
+
+      <div>
+            <p class="fw-bold">Part numbers with specific PR conditions just in BOM: </p>
+            {{text2|safe}}
+      </div>
+    </div>
+  </div>
+{% endblock %}
